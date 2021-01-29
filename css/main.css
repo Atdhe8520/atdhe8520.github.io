@@ -11,8 +11,6 @@ body {
 
 .webContainer{
   display: block;
-  transition: margin-left 0.4s;
-
 }
 
 @font-face {
@@ -34,9 +32,8 @@ body {
   text-align: left;
   padding-top:40px;
   padding-left: 20px;
-
-
 }
+
 #navBarText {
   color: #f1f1f1;
   font-family: exo2;
@@ -45,6 +42,7 @@ body {
   margin-right: 40px;
   margin-top: 10px;
 }
+
 #navBarImg{
   margin-left: 5px;
   margin-top: 10px;
@@ -59,7 +57,6 @@ body {
   position: relative;
   top: 25%;
   text-align: center;
-
 }
 
 .dropdown {
@@ -73,7 +70,6 @@ body {
   overflow-x: hidden;
   transition:0.4s;
   padding-top: 60px;
-
 }
 
 .dropdown a {
@@ -102,9 +98,11 @@ body {
 }
 
 @media screen and (max-height: 450px) {
+
   .dropdown {
     padding-top: 15px;
   }
+
   .dropdown a {
     font-size: 18px;
   }
@@ -126,10 +124,11 @@ span{
 }
 
 .body1{
-  height: calc(105vh);
+  height: calc(100vh + 35px);
   background-color: black;
   margin-top: -70px;
   font-family: exo2;
+  width: calc(100% + 100vh);
   color: white;
   right: 0;
   left: 0;
@@ -141,7 +140,7 @@ span{
 .body2{
   font-family: exo2-2;
   font-size: 3vh;
-  width: 70%;
+  width: 90%;
   margin-left: 3vh;
   margin-right: 3vh;
   color: #232322;
@@ -150,7 +149,7 @@ span{
 .body3{
   font-family: exo2-2;
   font-size: 3vh;
-  width: 70%;
+  width: 90%;
   margin-right: 3vh;
   margin-left: 3vh;
   color: #232322;
@@ -158,7 +157,7 @@ span{
 
 .body4{
   color: lightseagreen;
-  width: 100%;
+  width: calc(100% + 100vh);
   padding: 0;
   margin: 0;
   font-size: 2vh;
