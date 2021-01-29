@@ -4,14 +4,15 @@ body {
   width: 100%;
   background-color: lightgrey;
   overflow-x: hidden;
-  transition: margin-left 0.5s;
+  transition: margin-left 0.4s;
 
 
 }
 
 .webContainer{
   display: block;
-  transition: margin-left 0.5s;
+  transition: margin-left 0.4s;
+
 }
 
 @font-face {
@@ -70,7 +71,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition:0.5s;
+  transition:0.4s;
   padding-top: 60px;
 
 }
@@ -83,7 +84,7 @@ body {
   text-align: left;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.4s;
   font-family: exo2;
   color: lightseagreen;
 }
