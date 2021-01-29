@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user scalable=0">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>main</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="webContainer" id="webContainer">
+
+
+  <div class="navBar" id="navBar">
+
+
+    <img id="navBarImg" width="25px" height="25px" src="img/588a6507d06f6719692a2d15.png" alt="menu" onclick="openNav()"></a>
+      <h2 id="navBarText">Functioneel <span style="color: lightseagreen">Analist</span></h2>
+    <div class="dropdown" id="myNav">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navBarJS">
+        <a href="#introduction" onclick="closeNav()">Introductie</a>
+        <a href="#skills" onclick="closeNav()">Vaardigheden</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div id= "movingBody">
+
+  <div class="body1">
+
+    <h1>Hi, my name is</h1>
+
+    <h1><span style="color: lightseagreen"> Atdhe Alimaj</span></h1>
+
+  </div>
+  <span id="introduction"></span>
+  <div class="body2" >
+
+    <p> <span id="firstLine">Een passie met een niet te onderschatten skillset! </span><br><br>
+      Begonnen in de 3<small>de</small> graad informaticabeheer in de Sint-Amandscollege Kaai te Kortrijk.
+      Daar heb ik mijn eerste kennismaking gehad met het programmeren en de IT wereld. Meteen was ik ervan overtuigd dat dit mijn
+      toekomst was.<br><br>
+
+      Hierna volgde een opleiding in het hoger onderwijs in de toegepaste informatica.
+      Omwille van verschillende redenen heb ik hier mijn studies in het 2<small>de</small> jaar stopgezet en ben ik
+      daarna gaan werken. Na mijn werkperiode kreeg ik nog een kans om opnieuw te gaan studeren en deze heb
+      ik dan ook genomen. Een opleiding in de IT bleek niet mogelijk, waardoor ik naar accountancy-fiscaliteit werd
+      doorverwezen. <br><br>
+
+      Ondertussen ben ik mij al een tijdje aan het verdiepen naar de mogelijkheden tot een carrièreswitch binnen de IT.
+      Nergens heb ik iets dergelijks als de recruitering en opleiding van Switchfully gevonden.
+
+                <br><br>
+    </p>
+
+  </div>
+
+  <div class="body3" id="skills">
+
+    <p><span id="secondLine"> Mijn skills en ervaringen binnen de IT </span>
+    <ul class="skills1">
+      <li>Gevorderd</li>
+
+      <ul class="skills2">
+        <li>ERP pakketten </li>
+        <li>Word</li>
+        <li>Excel</li>
+        <li>Powerpoint</li>
+        <li>Netwerkbeheer</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>XML</li>
+      </ul>
+      <br>
+      <br>
+      <li>Beginnersniveau</li>
+
+      <ul class="skills3">
+        <li>Java</li>
+        <li>C++</li>
+        <li>3DS Max</li>
+        <li>PHP</li>
+        <li>SQL</li>
+      </ul>
+    </p>
+    </ul>
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+  <div class="body4" id="contact">
+    <br>
+    <h3><span style="color: white">telefoon:</span> +32 (0)487 40 64 43</h3>
+    <h3><span style="color: white">e-mail:</span> h.atdhe@gmail.com</h3>
+    <br>
+
+  </div>
+</div>
+</div>
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "250px";
+      document.getElementById("webContainer").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0";
+      document.getElementById("webContainer").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+
+  var navBar = document.getElementById("navBar");
+  var sticky = navBar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navBar.classList.add("sticky")
+    } else {
+      navBar.classList.remove("sticky");
+    }
+  }
+
+
+  $(document).ready(function(){
+    $(this).scrollTop(0);
+    window.scrollTo(1, 1);
+  });
+
+</script>
+
+
+</body>
+
+</html>
